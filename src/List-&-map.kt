@@ -77,4 +77,30 @@ fun main() {
     if (any3 is String) {
         println("Yes any3 is String " + any3.length)
     }
+
+    // when works similarly to Switch
+    when (any3) {
+        "Kotlin" -> {
+            println("Input was " + any3)
+        }
+        "Java" -> {
+            println("Input was " + any3)
+        }
+        "Flutter" -> {
+            println("Input was " + any3)
+        }
+        else -> {
+            println("Choice was Invalid")
+        }
+    }
+
+    // when can also return a value
+    val y = when (any2) {
+        1 -> "Input was 1"
+        2 -> "Input was 2"
+        3 -> "Input was 3"
+        4 -> "Input was 4"
+        else -> "Input Invalid"
+    }
+    println(y)
 }
