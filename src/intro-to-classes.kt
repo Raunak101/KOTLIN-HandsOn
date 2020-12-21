@@ -47,6 +47,7 @@ class Account {
         this.accno = accno
     }
 
+     // Secondary Constructor
     constructor(name: String, email: String) {
         this.name = name
         this.email = email
